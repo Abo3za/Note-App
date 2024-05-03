@@ -1,0 +1,66 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  body,
+  input,
+  textarea {
+    margin: 0;
+    background-color: #fafafa; /* Off-White for the main background */
+    color: #37474f; /* Dark Slate Gray for text */
+    font-family: "Arial", sans-serif;
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+  
+  
+  main {
+    background-color: #ffffff; /* White background for the main content area */
+    border: 1px solid #bdbdbd; /* Light Gray for border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    background-color: #009688; /* Teal for buttons */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #00796b; /* A darker shade of teal for button hover */
+  }
+  
+  input,
+  textarea {
+    background-color: #ffffff; /* White background for inputs and textareas */
+    border: 1px solid #bdbdbd;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    display: inline;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #ffffff; /* White text in the header for better contrast */
+  }
+  
+  ul li:hover {
+    color: #ffc107; /* Amber for hover effect */
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none; /* Removes the focus outline entirely */
+  }
+  

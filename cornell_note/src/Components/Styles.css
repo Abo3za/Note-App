@@ -1,0 +1,225 @@
+/* Header */
+.Main--header {
+    background-image: linear-gradient(to right, #009688, #00bfa5);
+    color: #ffffff;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+  }
+  
+  .left--side {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  
+  .lists--div {
+    display: flex;
+  }
+  
+  .ulist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .ulist li {
+    margin-right: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Simplified hover effect: subtle text color change or just a cursor change */
+  .ulist li:hover {
+    color: #e0f2f1; /* Slightly lighter shade than the header for a subtle effect */
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      padding: 10px 15px;
+    }
+  
+    .ulist li {
+      padding: 5px 10px;
+    }
+  }
+  
+  /* Hero */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .cornellForm {
+    max-width: 1200px; /* Adjust width to fit more content comfortably */
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f8f8; /* Light gray background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    font-family: "Arial", sans-serif;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .form-row label,
+  .notes-section label {
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .full-width-input,
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded borders for inputs */
+    box-sizing: border-box; /* Includes padding and border in the element's width */
+  }
+  
+  label {
+    font-size: 14px; /* Adjust font size */
+  }
+  
+  .notes-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Allocate 1 part for Questions & Cues and 3 parts for Notes */
+    gap: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded borders */
+  }
+  
+  textarea {
+    height: 300px; /* Fixed height for textarea */
+    padding: 10px;
+    border: none; /* No borders between textareas */
+    resize: none; /* Disable resizing */
+  }
+  
+  textarea:nth-child(1) {
+    border-right: 1px solid #ccc; /* Light gray border between textareas */
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4caf50; /* Green background color */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Larger font size for button */
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .summary2 {
+    margin-top: 20px;
+  }
+  
+  /* Saved note  */
+  
+  .saved-notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between cards */
+    padding: 20px;
+  }
+  
+  .note-card {
+    flex: 1;
+    min-width: 250px; /* Minimum width of each card */
+    max-width: 300px; /* Maximum width of each card */
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .note-card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card when hovered */
+  }
+  
+  .modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.6
+    ); /* Darken the background more to focus on the modal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050; /* Ensure it's above other content */
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 800px;
+    height: 80vh;  /* Restricts the modal height to 80% of the viewport height */
+    overflow-y: auto; /* Enables vertical scrolling if content exceeds the modal height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    position: relative; /* Ensures the modal is positioned relative to its container */
+  }
+  
+  
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333; /* Make close button visible */
+  }
+  
+  .note-card {
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .note-card:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
